@@ -1,0 +1,23 @@
+{
+  "name": "mandipulse-redesign",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "test:frontend": "node --test frontend/src/lib/accountConfig.test.mjs frontend/src/lib/api.test.mjs frontend/src/lib/planData.test.mjs frontend/src/lib/planPdf.test.mjs",
+    "test:backend": ".venv\\Scripts\\python.exe -m unittest discover -s backend/tests -p \"test_*.py\"",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.8",
+    "jspdf": "^4.2.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.5"
+  }
+}

@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.vscode/
+.DS_Store
+.local/
+tmp/
+.vercel/
+.vercel
+.env*
+!.env.example
